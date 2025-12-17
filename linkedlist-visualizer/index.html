@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Linked List Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h2>Linked List Visualizer</h2>
+
+<div class="template">
+
+  <!-- Main operation -->
+  <select id="operation">
+    <option value="" selected disabled>Select Operation</option>
+    <option value="insert">Insert</option>
+    <option value="delete">Delete</option>
+    <option value="search">Search</option>
+    <option value="reverse">Reverse</option>
+  </select>
+
+  <!-- Sub operation -->
+  <select id="subOperation" style="display:none;"></select>
+
+  <!-- Inputs -->
+  <input type="number" id="data" placeholder="Data" />
+  <input type="number" id="position" placeholder="Position" />
+
+  <!-- Action -->
+  <button id="goBtn">Go</button>
+</div>
+
+<div class="ll"></div>
+<div id="explanation"></div>
+
+<script type="module" src="src/index.js"></script>
+</body>
+</html>

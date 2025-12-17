@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.template {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.ll {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.node {
+  background: steelblue;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  position: relative;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.node.moving {
+  transform: translateY(-20px);
+}
+
+.node.removing {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+
+.node.active {
+  background: orange;
+  transform: scale(1.1);
+}
+
+.arrow {
+  margin: 0 10px;
+  font-size: 22px;
+}
+
+#explanation {
+  margin-top: 30px;
+  font-weight: bold;
+}
